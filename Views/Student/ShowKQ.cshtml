@@ -1,0 +1,22 @@
+@model BT3.Models.Student
+@{
+    ViewData["Title"] = "Kết quả đăng ký";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+        <div class="card p-5 shadow-sm">
+            <h3 class="text-success mb-4">
+                Cảm ơn bạn @Model.MSSV - @Model.HoTen đã đăng ký chuyên ngành @Model.ChuyenNganh
+            </h3>
+            
+            <h4 class="text-info mb-4">
+                Số lượng sv đã đăng ký ngành giống bạn là : @ViewBag.SoLuong
+            </h4>
+            
+            <div>
+                <a href="/Student/Index" class="btn btn-secondary">Quay lại trang đăng ký</a>
+            </div>
+        </div>
+    </div>
+</div>
